@@ -1,6 +1,34 @@
-# StressLens — Local Multi-Task Neural Network Deployment
+# StressLens — Student Stress Level Prediction
 
-A presentation-ready local web app for the supplied **Dataset A Multi-Task Neural Network**.
+A student project that uses a Multi-Task Neural Network
+to predict student stress profiles from selected survey inputs.
+
+## 🌐 Live Demo
+
+**Try StressLens:** https://student-stress-level.vercel.app/
+
+## ✨ Features
+
+- Interactive student survey form
+- Eight user-controlled input parameters
+- Automatic defaults for the remaining model features
+- Stress profile prediction
+- Class probability distribution
+- Responsive web interface
+
+## 🛠️ Technology Stack
+
+- Frontend: React and Vite
+- Backend: Django and Python
+- Machine Learning: PyTorch
+- Frontend Hosting: Vercel
+- Backend Hosting: Render
+
+## ⚠️ Disclaimer
+
+StressLens is an educational machine-learning project.
+Its predictions are not a medical diagnosis or a
+clinically validated measurement of stress.
 
 ## What this project uses
 
@@ -32,13 +60,13 @@ Enter the eight available parameters to generate a stress-profile prediction. Th
 
 The application displays the predicted stress category, model confidence, selected task head, and class probability distribution.
 
-![StressLens Prediction Results Example 1](docs/screenshots/02-stresslens-prediction-68-9.png)
+![StressLens Prediction Results Example 1](docs/screenshots/02-stresslens-prediction-97-9.png)
 
 ### 3. Stress Prediction Results — Example 2
 
 A second example demonstrates the prediction interface with different input values and a different probability distribution.
 
-![StressLens Prediction Results Example 2](docs/screenshots/03-stresslens-prediction-76-4.png)
+![StressLens Prediction Results Example 2](docs/screenshots/03-stresslens-prediction-64-4.png)
 
 ---
 

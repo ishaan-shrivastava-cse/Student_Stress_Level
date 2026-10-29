@@ -1,9 +1,23 @@
-﻿.venv/
+﻿# Python virtual environments
+.venv/
+venv/
+
+# Python cache and compiled files
 **/__pycache__/
 *.py[cod]
-frontend/node_modules/
+
+# Node.js dependencies and build output
+node_modules/
 frontend/dist/
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+!**/.env.example
+
+# Log files
 *.log
 
+# Local SQLite database
 backend/db.sqlite3
