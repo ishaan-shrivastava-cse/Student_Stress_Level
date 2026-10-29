@@ -44,7 +44,7 @@ function App() {
 
     const timeoutId = window.setTimeout(() => {
       controller.abort();
-    }, 15000);
+    }, 120000);
 
     async function loadMetadata() {
       try {
