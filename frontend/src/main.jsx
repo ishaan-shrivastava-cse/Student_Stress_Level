@@ -220,7 +220,7 @@ function App() {
 
         <div className="status">
           <span className="pulse" />
-          Local inference
+          Hosted inference
         </div>
       </header>
 
@@ -238,15 +238,17 @@ function App() {
           </h1>
 
           <p>
-            Enter 8 key survey signals. The remaining inputs are
-            automatically held at training-set defaults so the trained
-            model can produce a complete 25-feature prediction.
+            Enter 8 key survey signals. The remaining inputs use
+            training-set defaults to complete the 25-feature prediction.
+            Your responses are sent to a hosted backend for processing.
+            This is an educational project, not a medical assessment.
+            Please do not enter your name or other identifying information.
           </p>
 
           <div className="hero-meta">
             <span>
               <ShieldCheck size={15} />
-              Runs locally
+              Hosted API
             </span>
 
             <span>
@@ -502,8 +504,8 @@ function App() {
                   <Info size={15} />
 
                   <span>
-                    This is a model prediction for educational/project
-                    use, not a medical diagnosis.
+                    This is an educational model prediction, not a medical diagnosis
+                    or a clinically validated stress assessment.
                   </span>
                 </div>
               </div>
@@ -516,7 +518,7 @@ function App() {
         <span>StressLens · Student Stress Prediction</span>
 
         <span>
-          Private local inference · No data leaves your machine
+          Responses sent to hosted API · Educational demo only
         </span>
       </footer>
     </div>
