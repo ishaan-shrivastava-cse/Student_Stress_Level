@@ -6,3 +6,4 @@ imbalanced-learn>=0.13,<0.15
 joblib>=1.4,<2
 torch>=2.5,<3
 gunicorn>=23,<24
+django-cors-headers>=4.6,<5
