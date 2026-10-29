@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 import { Activity, ArrowRight, BrainCircuit, Check, Gauge, Info, Loader2, RotateCcw, ShieldCheck, Sparkles } from "lucide-react";
 import "./styles.css";
 
+const API_BASE = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
+
 const LIKERT = [
   {v:1,t:"Very low"},{v:2,t:"Low"},{v:3,t:"Moderate"},{v:4,t:"High"},{v:5,t:"Very high"}
 ];
@@ -15,7 +17,7 @@ function App(){
   const [error,setError]=useState("");
 
   useEffect(()=>{
-    fetch("/api/metadata/")
+    fetch(`${API_BASE}/api/metadata/`)
       .then(r=>r.json()).then(d=>{
         setMeta(d);
         const initial={};
@@ -29,7 +31,7 @@ function App(){
   const submit=async(e)=>{
     e.preventDefault(); setLoading(true); setError(""); setResult(null);
     try{
-      const r=await fetch("/api/predict/",{
+      const r=await fetch(`${API_BASE}/api/predict/`,{
         method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(form)
       });
       const d=await r.json();
