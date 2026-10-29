@@ -3,7 +3,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "local-development-only-student-stress"
 DEBUG = True
-ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "stresslens-api.onrender.com",
+]
 
 INSTALLED_APPS = [
     "django.contrib.contenttypes",
