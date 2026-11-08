@@ -3,9 +3,13 @@
 A student project that uses a Multi-Task Neural Network
 to predict student stress profiles from selected survey inputs.
 
-## 🌐 Live Demo
+## 🌐 Live Demo & Deployment
 
-**Try StressLens:** https://student-stress-level.vercel.app/
+- **Frontend (Vercel):** [Open StressLens](https://student-stress-level.vercel.app/)
+- **Backend (Render):** Hosted Django REST API.
+- **Backend Health Check:** [Check API Status](https://stresslens-api.onrender.com/api/health/)
+
+The health-check endpoint verifies backend availability and reports the loaded model and inference device.
 
 ## ✨ Features
 
@@ -36,7 +40,9 @@ clinically validated measurement of stress.
 - **Architecture:** 25 inputs → 64-unit shared layers → 2 cluster-specific task heads → 3 classes
 - **Backend:** Django
 - **Frontend:** React + Vite
-- **Inference:** local machine only
+- **Inference:** Supported through local execution and the deployed Django backend.
+- **Deployment:** React frontend on Vercel and Django backend on Render.
+- **Inference Device:** CUDA when available locally; deployed Render backend currently uses CPU.
 - **GPU:** automatically uses CUDA when the installed PyTorch build exposes CUDA; otherwise CPU
 - **User inputs:** 8 parameters
 - **Automatic inputs:** remaining 17 features use training-set defaults
